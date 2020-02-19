@@ -7,42 +7,67 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        // This is a comment
-        let somecode = 'this code';
+<script>
+// This is a comment
+  let somecode = 'this code';
         
-        /*
-        FYI that this is a comment, too
-        but it can be on more then one line
-        */
-        let x = 4;
-        console.log(x);
-        console.log("Let`s do math");
-        let y = 3;
-        console.log(y);
-        let z = x * y;
-        console.log(z);
+/*
+FYI that this is a comment, too
+but it can be on more then one line
+*/
+  let x = 4;
+  console.log(x);
+  console.log("Let`s do math");
+  let y = 3;
+  console.log(y);
+  let z = x * y;
+  console.log(z);
         
-        console.log("Working with strings")
-        let firstName= 'Paulo'
-        let middName= 'Baleeiro'
-        let lastName = 'Passos'
-        console.log (firstName + " " + lastName);
-        console.log (firstName + " " + middName + " " + lastName);
-        // String in my own
-        let greeting = "My name is " + firstName;
-        console.log (greeting);
+  console.log("Working with strings")
+  let firstName= 'Paulo'
+  let middName= 'Baleeiro'
+  let lastName = 'Passos'
+  console.log (firstName + " " + lastName);
+  console.log (firstName + " " + middName + " " + lastName);
 
-        console.log ()
-        
+// String in my own
+  let greeting = "My name is " + firstName;
+  console.log (greeting);
+
+// function on my own
+  function makeName (firstName, middName, lastName) {
+    let fullName = firstName + ' ' + middName + ' ' + lastName;
+    return fullName; 
+        }
+
+        console.log (makeName("My","Whole", "Name"));
+        console.log (makeName("Não", "sei","meu nome"))
 
 
 
+// Make a name with middle initial
+  function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName
+    } else {
+      return false;
+  }
+  }
+  console.log(makeBetterName("Joan", "Marie", "Larkin"));
+  console.log(makeBetterName("John", "F", "Kennedy"));
 
 
-    
-
-
+  function gameResult(home,away) {
+      if (home>away) {
+          return 'The home team won';
+      } else if { (homeScore === awayScore) {
+        return = 'They tied';
+      } else {
+        return 'The away team won';
+    }
+  console.log(gameResult(4,2))   
         </script>
-    </body>
+ </body>
 </html>
